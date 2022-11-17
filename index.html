@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="back1"></div>
+  <div class="back2"></div>
+  <h1>L'incroyable jeu du Morpion</h1>
+  <div class="modale">
+    <h2>Joueur 1, choisissez votre symbole.</h2>
+    <div class="images">
+      <img class="choixrond" onclick="choix2()" src="rondmorpion.svg"></img>
+      <img class="choixcroix" onclick="choix1()" src="croix.svg"></img>
+    </div>
+  </div>
+  <table>
+    <tr>
+      <td class="td00" onclick="okcool(0,0)">
+        <span class="num00"></span>
+        <img class="circle00" src="rondmorpion.svg" alt="" />
+        <img class="cross00" src="croix.svg" alt="" />
+      </td>
+      <td class="td01" onclick="okcool(0,1)">
+        <span class="num01"></span>
+        <img class="circle01" src="rondmorpion.svg" alt="" />
+        <img class="cross01" src="croix.svg" alt="" />
+      </td>
+      <td class="td02" onclick="okcool(0,2)">
+        <span class="num02"></span>
+        <img class="circle02" src="rondmorpion.svg" alt="" />
+        <img class="cross02" src="croix.svg" alt="" />
+      </td>
+    </tr>
+    <tr>
+      <td class="td10" onclick="okcool(1,0)">
+        <span class="num10"></span>
+        <img class="circle10" src="rondmorpion.svg" alt="" />
+        <img class="cross10" src="croix.svg" alt="" />
+      </td>
+      <td class="td11" onclick="okcool(1,1)">
+        <span class="num11"></span>
+        <img class="circle11" src="rondmorpion.svg" alt="" />
+        <img class="cross11" src="croix.svg" alt="" />
+      </td>
+      <td class="td12" onclick="okcool(1,2)">
+        <span class="num12"></span>
+        <img class="circle12" src="rondmorpion.svg" alt="" />
+        <img class="cross12" src="croix.svg" alt="" />
+      </td>
+    </tr>
+    <tr>
+      <td class="td20" onclick="okcool(2,0)">
+        <span class="num20"></span>
+        <img class="circle20" src="rondmorpion.svg" alt="" />
+        <img class="cross20" src="croix.svg" alt="" />
+      </td>
+      <td class="td21" onclick="okcool(2,1)">
+        <span class="num21"></span>
+        <img class="circle21" src="rondmorpion.svg" alt="" />
+        <img class="cross21" src="croix.svg" alt="" />
+      </td>
+      <td class="td22" onclick="okcool(2,2)">
+        <span class="num22"></span>
+        <img class="circle22" src="rondmorpion.svg" alt="" />
+        <img class="cross22" src="croix.svg" alt="" />
+      </td>
+    </tr>
+  </table>
+  <div class="bouton">
+    <button class="bouton1 anim" onclick="play(1)">Joueur 1</button>
+    <button class="bouton2" onclick="play(2)">Joueur 2</button>
+    <button class="bouton3" onclick="reload()">Rejouer</button>
+  </div>
+  <div class="result">Joueur 1 vous de jouer !</div>
+  <audio src="https://universal-soundbank.com/sounds/2767.mp3"></audio>
+  <script type="text/javascript" src="Library.js"></script>
+  <script type="text/javascript" src="graphique.js"></script>
+</body>
+
+</html>
